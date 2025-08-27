@@ -13,12 +13,7 @@ import {
   nodejs,
   mongodb,
   git,
-  figma,
   docker,
-  meta,
-  scet,
-  tesla,
-  shopify,
   carrent,
   jobit,
   tripguide,
@@ -113,16 +108,16 @@ const technologies = [
 const experiences = [
   {
     title: "Bacholer in Computer Engineering",
-    company_name: "Sarvajanik College of Engineering and Technology",
-    icon: scet,
+    company_name: "",
+    icon: undefined,
     iconBg: "#383E56",
     date: "June 2020 - May 2024",
     points: [],
   },
   {
     title: "Full Stack Developer Intern",
-    company_name: "Semicolon Solution",
-    icon: tesla,
+    company_name: "",
+    icon: undefined,
     iconBg: "#E6DEDD",
     date: "Jan 2024 - May 2024",
     points: [
@@ -133,8 +128,8 @@ const experiences = [
   },
   {
     title: "Junior Software Developer",
-    company_name: "Semicolon Solution",
-    icon: shopify,
+    company_name: "",
+    icon: undefined,
     iconBg: "#383E56",
     date: "June 2024 - Feb 2025",
     points: [
@@ -145,8 +140,8 @@ const experiences = [
   },
   {
     title: "Master in Computer Science",
-    company_name: "Paderborn University",
-    icon: meta,
+    company_name: "",
+    icon: undefined,
     iconBg: "#E6DEDD",
     date: "April 2025 - Present",
     points: [],
@@ -159,7 +154,7 @@ const testimonials = [
       "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
     name: "Sara Lee",
     designation: "CFO",
-    company: "Acme Co",
+    company: "",
     image: "https://randomuser.me/api/portraits/women/4.jpg",
   },
   {
@@ -167,7 +162,7 @@ const testimonials = [
       "I've never met a web developer who truly cares about their clients' success like Rick does.",
     name: "Chris Brown",
     designation: "COO",
-    company: "DEF Corp",
+    company: "",
     image: "https://randomuser.me/api/portraits/men/5.jpg",
   },
   {
@@ -175,7 +170,7 @@ const testimonials = [
       "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
     name: "Lisa Wang",
     designation: "CTO",
-    company: "456 Enterprises",
+    company: "",
     image: "https://randomuser.me/api/portraits/women/6.jpg",
   },
 ];
@@ -201,7 +196,7 @@ const projects = [
       {
         name: "nodejs",
         color: "blue-text-gradient",
-      }
+      },
     ],
     image: carrent,
     source_code_link: "https://github.com/dhruv851/Ecommerce-Platform",
@@ -239,7 +234,7 @@ const projects = [
       {
         name: "react",
         color: "green-text-gradient",
-      }
+      },
     ],
     image: tripguide,
     source_code_link: "https://github.com/dhruv851/Daily-NewsDoze",
