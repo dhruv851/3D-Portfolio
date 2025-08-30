@@ -1,4 +1,5 @@
 import logo from "./logo.webp";
+import threejs1 from "./threejs1.png";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -21,6 +22,8 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
+import newz from "./newz.png";
+import ecommerce from "./ecommerce.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
@@ -50,4 +53,7 @@ export {
   carrent,
   jobit,
   tripguide,
+  threejs1,
+  ecommerce,
+  newz,
 };

@@ -18,8 +18,10 @@ import {
   jobit,
   tripguide,
   threejs,
-} from "../assets";
-
+  threejs1,
+  newz,
+  ecommerce,
+} from "../assets/index.js";
 export const navLinks = [
   {
     id: "about",
@@ -198,7 +200,7 @@ const projects = [
         color: "blue-text-gradient",
       },
     ],
-    image: carrent,
+    image: ecommerce,
     source_code_link: "https://github.com/dhruv851/Ecommerce-Platform",
   },
   {
@@ -223,6 +225,27 @@ const projects = [
     source_code_link: "https://github.com/dhruv851/House_marketplace",
   },
   {
+    name: "Artify ThreeJS",
+    description:
+      "Artify ThreeJS is a full-stack web application that allows users to design and customize 3D t-shirts using Three.js, React, and AI-powered image generation. The project features a modern UI, interactive 3D canvas, and a Node.js/Express backend for AI integration.",
+    tags: [
+      {
+        name: "threejs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "react",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwindcss",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: threejs1,
+    source_code_link: "https://github.com/dhruv851/Artify_ThreeJS",
+  },
+  {
     name: "Daily NewsDoze",
     description:
       "Built a React 18 SPA with React Router v6 across multiple news categories, fully tested with RTL/Jest, and set up npm scripts for automatic gh-pages deploys (build, test, publish on every push) to speed up releases.",
@@ -236,7 +259,7 @@ const projects = [
         color: "green-text-gradient",
       },
     ],
-    image: tripguide,
+    image: newz,
     source_code_link: "https://github.com/dhruv851/Daily-NewsDoze",
   },
 ];
