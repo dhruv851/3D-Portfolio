@@ -19,6 +19,8 @@ import {
   tripguide,
   threejs,
   threejs1,
+  vibecode,
+  house,
   newz,
   ecommerce,
 } from "../assets/index.js";
@@ -179,9 +181,84 @@ const testimonials = [
 
 const projects = [
   {
+    name: "Vibe - Cloud Code Editor",
+    description:
+      "Built a modern cloud-based code editor using Next.js, TypeScript, and MongoDB that enables browser-based development with Monaco Editor, WebContainer API for live previews, OpenAI GPT-4 integration for AI code assistance, multi-framework template support, real-time collaboration, project management dashboard, and intelligent file management.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "typescript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "shadcn",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "prisma and mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "xterm",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: vibecode,
+    source_code_link: "https://github.com/dhruv851/Daily-NewsDoze",
+  },
+  {
+    name: "Artify - 3D Product",
+    description:
+      "Created a full-stack web application for designing t-shirts in real time in 3D using AI-generated design. Employed interactive rendering in 3D using Three.js, OpenAI DALL·E API to create images, and responsive UI constructed using React and Tailwind CSS. Managed app state using Valtio and created smooth animations using Framer Motion.",
+
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "threejs",
+        color: "green-text-gradient",
+      },
+      {
+        name: "nodejs",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "express",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "green-text-gradient",
+      },
+      {
+        name: "valtio",
+        color: "pink-text-gradient",
+
+      },
+      {
+        name: "vite",
+        color: "blue-text-gradient",
+      },
+
+    ],
+    image: threejs1,
+    source_code_link: "https://github.com/dhruv851/Daily-NewsDoze",
+  },
+
+  {
     name: "Ecommerce Platform",
     description:
-      "Secured endpoints with JWT and bcrypt; added a self-serve admin dashboard so business users handle routine tasks. Optimized MongoDB indexes and APIs; set up SendGrid alerts to speed up product fetches and keep the storefront responsive.",
+      "Developed a complete full-stack ecommerce web application using Node.js, Express.js, MongoDB, and React.js featuring user registration/authentication, admin dashboard for product and user management, shopping cart functionality, order processing, and payment integration. Implemented secure JWT authentication, RESTful API architecture, database design, responsive React UI with API and hooks.",
+
     tags: [
       {
         name: "react",
@@ -203,6 +280,7 @@ const projects = [
     image: ecommerce,
     source_code_link: "https://github.com/dhruv851/Ecommerce-Platform",
   },
+
   {
     name: "House Marketplace",
     description:
@@ -221,30 +299,10 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
+    image: house,
     source_code_link: "https://github.com/dhruv851/House_marketplace",
   },
-  {
-    name: "Artify ThreeJS",
-    description:
-      "Artify ThreeJS is a full-stack web application that allows users to design and customize 3D t-shirts using Three.js, React, and AI-powered image generation. The project features a modern UI, interactive 3D canvas, and a Node.js/Express backend for AI integration.",
-    tags: [
-      {
-        name: "threejs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "react",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwindcss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: threejs1,
-    source_code_link: "https://github.com/dhruv851/Artify_ThreeJS",
-  },
+
   {
     name: "Daily NewsDoze",
     description:

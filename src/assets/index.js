@@ -1,5 +1,7 @@
 import logo from "./logo.webp";
 import threejs1 from "./threejs1.png";
+import vibecode from "./vibecode.png";
+import house from "./house.png";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -54,6 +56,8 @@ export {
   jobit,
   tripguide,
   threejs1,
+  vibecode,
+  house,
   ecommerce,
   newz,
 };
