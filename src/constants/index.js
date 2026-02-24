@@ -217,7 +217,7 @@ const projects = [
       },
     ],
     image: vibecode,
-    source_code_link: "https://github.com/dhruv851",
+    source_code_link: "https://github.com/dhruv851/vibe-editor",
   },
   {
     name: "Artify - 3D Product Customizer",
@@ -248,16 +248,14 @@ const projects = [
       {
         name: "valtio",
         color: "pink-text-gradient",
-
       },
       {
         name: "vite",
         color: "blue-text-gradient",
       },
-
     ],
     image: threejs1,
-    source_code_link: "https://github.com/dhruv851",
+    source_code_link: "https://github.com/dhruv851/Artify_ThreeJS",
   },
 
   {
@@ -296,7 +294,6 @@ const projects = [
     ],
     image: pdfRag,
     source_code_link: "https://github.com/dhruv851/PDF_RAG",
-
   },
 
   {
