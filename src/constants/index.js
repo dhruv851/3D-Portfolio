@@ -23,6 +23,7 @@ import {
   house,
   newz,
   ecommerce,
+  pdfRag,
 } from "../assets/index.js";
 export const navLinks = [
   {
@@ -34,6 +35,10 @@ export const navLinks = [
     title: "Work",
   },
   {
+    id: "projects",
+    title: "Projects",
+  },
+  {
     id: "contact",
     title: "Contact",
   },
@@ -41,19 +46,19 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Full-Stack Web Developer",
     icon: web,
   },
   {
-    title: "Full Stack Developer",
-    icon: mobile,
-  },
-  {
-    title: "Bug Fixing",
+    title: "Backend & REST API Developer",
     icon: backend,
   },
   {
-    title: "Website Design",
+    title: "Cloud & DevOps (AWS, Docker, K8s)",
+    icon: mobile,
+  },
+  {
+    title: "GenAI & LLM Integrations",
     icon: creator,
   },
 ];
@@ -112,7 +117,7 @@ const technologies = [
 const experiences = [
   {
     title: "Bacholer in Computer Engineering",
-    company_name: "",
+    company_name: "Gujarat Technological University",
     icon: undefined,
     iconBg: "#383E56",
     date: "June 2020 - May 2024",
@@ -120,31 +125,32 @@ const experiences = [
   },
   {
     title: "Full Stack Developer Intern",
-    company_name: "",
+    company_name: "Semicolon Solution",
     icon: undefined,
     iconBg: "#E6DEDD",
     date: "Jan 2024 - May 2024",
     points: [
-      "Built REST APIs and secured them with JWT, role-based access, and rate limiting to keep data safe and reliable.",
-      "Deployed and tuned MERN apps end to end, making pages load faster and improving the user experience.",
-      "Wrote solid unit and integration tests so the team could ship confidently and catch major issues before production.",
+      "Delivered 20+ REST APIs in Node.js/Express for core product workflows, implementing JWT, RBAC, schema validation, and rate limiting.",
+      "Optimized MongoDB queries with indexes, pagination, and response shaping, reducing payload size and eliminating slow query hotspots.",
+      "Established CI/CD pipelines with GitHub Actions for automated testing and deployments, cutting release time by 60% and improving reliability.",
     ],
   },
   {
     title: "Junior Software Developer",
-    company_name: "",
+    company_name: "Semicolon Solution",
     icon: undefined,
     iconBg: "#383E56",
     date: "June 2024 - Feb 2025",
     points: [
-      "Increased test coverage and cleaned up the codebase, preventing edge-case bugs from reaching QA.",
-      "Introduced contract-based PR testing and ran focused sprints, keeping releases on schedule and reducing QA issues.",
-      "Wrote clear documentation and set up modern tooling, making onboarding faster and smoother.",
+      "Implemented contract-based pull request testing and orchestrated focused sprints, decreasing QA issues by 25%.",
+      "Containerized services with Docker and managed them via Kubernetes, enhancing service availability by 50% during updates.",
+      "Introduced TDD with JUnit and Jest to raise code coverage, leading to a 30% improvement in post-deployment stability.",
+      "Collaborated with product owners and QA in an Agile/Scrum environment to deliver new features on schedule.",
     ],
   },
   {
     title: "Master in Computer Science",
-    company_name: "",
+    company_name: "Paderborn University",
     icon: undefined,
     iconBg: "#E6DEDD",
     date: "April 2025 - Present",
@@ -183,7 +189,7 @@ const projects = [
   {
     name: "Vibe - Cloud Code Editor",
     description:
-      "Built a modern cloud-based code editor using Next.js, TypeScript, and MongoDB that enables browser-based development with Monaco Editor, WebContainer API for live previews, OpenAI GPT-4 integration for AI code assistance, multi-framework template support, real-time collaboration, project management dashboard, and intelligent file management.",
+      "Built a full-stack cloud code editor with Next.js, TypeScript, Tailwind CSS, and MongoDB that enables 100% browser-based development using Monaco + WebContainer, GPT-4 code completion and chat, multi-framework project templates, RBAC with NextAuth, and real-time collaboration.",
     tags: [
       {
         name: "nextjs",
@@ -202,7 +208,7 @@ const projects = [
         color: "blue-text-gradient",
       },
       {
-        name: "prisma and mongodb",
+        name: "mongodb",
         color: "green-text-gradient",
       },
       {
@@ -211,12 +217,12 @@ const projects = [
       },
     ],
     image: vibecode,
-    source_code_link: "https://github.com/dhruv851/Daily-NewsDoze",
+    source_code_link: "https://github.com/dhruv851",
   },
   {
-    name: "Artify - 3D Product",
+    name: "Artify - 3D Product Customizer",
     description:
-      "Created a full-stack web application for designing t-shirts in real time in 3D using AI-generated design. Employed interactive rendering in 3D using Three.js, OpenAI DALL·E API to create images, and responsive UI constructed using React and Tailwind CSS. Managed app state using Valtio and created smooth animations using Framer Motion.",
+      "Executed a 3D product-based website in React using Three.js that lets users customize t-shirt color, logo, and texture in real time, powering 3D previews via Three.js and generating logos and textures with the OpenAI DALL·E API on top of a responsive React + Tailwind CSS UI.",
 
     tags: [
       {
@@ -251,13 +257,52 @@ const projects = [
 
     ],
     image: threejs1,
-    source_code_link: "https://github.com/dhruv851/Daily-NewsDoze",
+    source_code_link: "https://github.com/dhruv851",
+  },
+
+  {
+    name: "PDF-RAG",
+    description:
+      "Built a PDF question-answering web app with a Next.js/React/Tailwind CSS frontend and a Node.js/Express/LangChain/OpenAI backend so users can upload PDFs and ask natural-language questions. Designed an async RAG pipeline with BullMQ, Valkey/Redis, RecursiveCharacterTextSplitter, OpenAI embeddings, and Qdrant for reliable ingestion and low-latency semantic search over large documents.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "nodejs",
+        color: "green-text-gradient",
+      },
+      {
+        name: "langchain",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "qdrant",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "bullmq",
+        color: "green-text-gradient",
+      },
+      {
+        name: "redis",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "openai",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: pdfRag,
+    source_code_link: "https://github.com/dhruv851/PDF_RAG",
+
   },
 
   {
     name: "Ecommerce Platform",
     description:
-      "Developed a complete full-stack ecommerce web application using Node.js, Express.js, MongoDB, and React.js featuring user registration/authentication, admin dashboard for product and user management, shopping cart functionality, order processing, and payment integration. Implemented secure JWT authentication, RESTful API architecture, database design, responsive React UI with API and hooks.",
+      "Developed a full-stack ecommerce application with React, Node.js, Express, MongoDB, and Stripe, featuring user authentication, an admin dashboard, shopping cart and order management, and secure JWT + bcrypt + RBAC-protected APIs. Optimized MongoDB-backed endpoints and wired SendGrid email alerts, eliminating 70% of unauthorized hits and cutting product-fetch latency by 35%.",
 
     tags: [
       {

@@ -47,15 +47,17 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        I’m a full-stack engineer based in Paderborn, Germany, with 1+ years of
-        hands-on experience building with React and Node.js. At Semicolon
-        Solution, I raised test coverage to 85%, cut API latency ~30%, and
-        reduced QA bugs by 25% through contract-based PR testing and better
-        tooling. I’ve shipped secure, production-ready apps—from an e-commerce
-        platform with JWT/RBAC and Stripe to a house marketplace with real-time
-        alerts and automated CI/CD—focused on speed, reliability, and clean DX.
-        I’m currently pursuing an M.Sc. in Computer Science at Paderborn
-        University and exploring AI/ML to build scalable, data-driven products.
+        I&apos;m a full-stack software engineer based in Paderborn, Germany,
+        focused on building production-ready web applications and scalable
+        services. At Semicolon Solution, I delivered 20+ secured REST APIs,
+        introduced contract-based pull request testing, and used TDD to improve
+        code coverage and post-deployment stability. I work across the MERN
+        stack with tooling like Docker, Kubernetes, GitHub Actions, and Stripe,
+        and I enjoy designing clean APIs, resilient backends, and smooth,
+        responsive UIs. I&apos;m currently pursuing an M.Sc. in Computer
+        Science at Paderborn University and exploring GenAI workflows with
+        Hugging Face, LangChain/LangGraph, and RAG to build data-driven, AI‑
+        powered experiences.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">

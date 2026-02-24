@@ -1,0 +1,11 @@
+.vercel
+
+# Local Netlify folder
+.netlify
+
+# Node modules and build output
+node_modules/
+dist/
+
+# macOS system files
+.DS_Store
