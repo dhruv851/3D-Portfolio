@@ -1,79 +1,96 @@
-3D Portfolio
+# Dhruv Sonani - 3D Portfolio
 
-This project uses Vite with React, Tailwind CSS, Three.js, React Three Fiber, and Drei.
+A personal portfolio website built with React, Three.js, and Tailwind CSS featuring interactive 3D models, smooth animations, and bilingual support (German/English).
 
-Available Scripts
+## Live Demo
 
-In the project directory, you can run:
+[https://dhruvsonani.netlify.app](https://dhruvsonani.netlify.app)
 
+## Features
+
+- **Interactive 3D Models** - Desktop PC and Earth globe rendered with Three.js and React Three Fiber
+- **Bilingual Support** - Full German (default) and English language toggle
+- **Profile Photo Lightbox** - Click the navbar photo to view full-size with smooth animation
+- **Circular Favicon** - Auto-generated circular profile photo as browser tab icon
+- **Responsive Design** - Fully responsive across desktop, tablet, and mobile
+- **Smooth Animations** - Section transitions powered by Framer Motion
+- **Contact Form** - Integrated with EmailJS for direct email delivery
+- **Timeline** - Interactive vertical timeline for education and work experience
+
+## Tech Stack
+
+| Category | Technologies |
+|----------|-------------|
+| Frontend | React 18, React Router v6 |
+| 3D | Three.js, React Three Fiber, Drei |
+| Styling | Tailwind CSS, Framer Motion |
+| Email | EmailJS |
+| Build | Vite |
+| Hosting | Netlify |
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v16 or higher)
+- npm or yarn
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/dhruv851/3D-Portfolio.git
+
+# Navigate to project directory
+cd 3D-Portfolio
+
+# Install dependencies
+npm install
+
+# Start development server
 npm run dev
+```
 
-Runs the app in development mode (Vite).
-Open http://localhost:5173
-to view it in your browser.
+The app will be running at `http://localhost:5173`
 
-The page will reload when you make changes, and you’ll see any build errors in the console.
+### Build for Production
 
+```bash
 npm run build
+```
 
-Builds the app for production to the dist folder.
-It correctly bundles React in production mode and optimizes the build for best performance.
+The output will be in the `dist/` folder, ready to deploy.
 
-Your app is ready to be deployed!
+### Preview Production Build
 
+```bash
 npm run preview
+```
 
-Serves the production build from the dist folder so you can verify the output locally.
+## Project Structure
 
-npm test (optional)
+```
+src/
+├── assets/          # Images, icons, and 3D model references
+├── components/      # React components (Navbar, Hero, About, etc.)
+│   └── canvas/      # Three.js 3D components (Computers, Earth, Stars)
+├── constants/       # Static data (experiences, projects, technologies)
+├── context/         # React context (Language provider)
+├── hoc/             # Higher-order components (SectionWrapper)
+├── translations/    # EN/DE translation strings
+├── utils/           # Animation utilities (Framer Motion variants)
+├── styles.js        # Shared Tailwind class definitions
+├── App.jsx          # Root component
+└── main.jsx         # Entry point
+```
 
-If you’ve added a test setup (e.g., Vitest/RTL), this launches the test runner in watch mode.
+## Deployment (Netlify)
 
-Learn More
+This project is deployed on **Netlify** with continuous deployment from GitHub.
 
-Vite Guide: https://vitejs.dev/guide/
 
-React Docs: https://react.dev/
 
-Tailwind CSS: https://tailwindcss.com/docs
 
-Three.js: https://threejs.org/docs/
 
-React Three Fiber: https://docs.pmnd.rs/react-three-fiber/getting-started/introduction
 
-Drei: https://docs.pmnd.rs/drei/introduction
 
-EmailJS: https://www.emailjs.com/docs/
-
-Code Splitting
-
-Handled automatically by Vite/Rollup via dynamic import().
-Docs: https://vitejs.dev/guide/features.html#code-splitting
-
-Analyzing the Bundle Size
-
-Use tools like rollup-plugin-visualizer on the production build.
-Guide: https://vitejs.dev/guide/build.html#inspect-the-bundle
-
-Making a Progressive Web App
-
-Add and configure vite-plugin-pwa.
-Docs: https://vite-pwa-org.netlify.app/
-
-Advanced Configuration
-
-Tweak vite.config.\* for aliases, plugins, env, and build options.
-Reference: https://vitejs.dev/config/
-
-Deployment
-
-Run npm run build, then deploy the dist folder to your host (Vercel, Netlify, GitHub Pages, etc.).
-Guide: https://vitejs.dev/guide/static-deploy.html
-
-Troubleshooting
-
-Port in use: npm run dev -- --port 5174
-
-Build errors: delete node_modules and lockfile, then reinstall (rm -rf node_modules && npm i)
-
-EmailJS not working: ensure env keys are prefixed with VITE\_ and values match your EmailJS dashboard
