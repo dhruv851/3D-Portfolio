@@ -2,8 +2,13 @@ import { motion } from "framer-motion";
 
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
+import { useLanguage } from "../context/LanguageContext";
+import translations from "../translations";
 
 const Hero = () => {
+  const { language } = useLanguage();
+  const t = translations[language].hero;
+
   return (
     <section className={`relative w-full h-screen mx-auto`}>
       <div
@@ -16,12 +21,12 @@ const Hero = () => {
 
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I&apos;m <span className='text-[#915EFF]'>Dhruv</span>
+            {t.greeting} <span className='text-[#915EFF]'>{t.name}</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            Full-stack software engineer crafting production-ready web apps,{" "}
+            {t.subtitle}{" "}
             <br className='sm:block hidden' />
-            GenAI workflows, and 3D experiences.
+            {t.subtitleBreak}
           </p>
         </div>
       </div>

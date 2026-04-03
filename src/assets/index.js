@@ -1,4 +1,5 @@
 import logo from "./logo.webp";
+import profileImg from "./image (1).png";
 import threejs1 from "./threejs1.png";
 import vibecode from "./vibecode.png";
 import house from "./house.png";
@@ -33,6 +34,7 @@ import tripguide from "./tripguide.png";
 
 export {
   logo,
+  profileImg,
   backend,
   creator,
   mobile,

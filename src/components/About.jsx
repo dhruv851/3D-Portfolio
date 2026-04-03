@@ -6,6 +6,8 @@ import { styles } from "../styles";
 import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
+import { useLanguage } from "../context/LanguageContext";
+import translations from "../translations";
 
 const ServiceCard = ({ index, title, icon }) => (
   <Tilt className="xs:w-[250px] w-full">
@@ -36,33 +38,31 @@ const ServiceCard = ({ index, title, icon }) => (
 );
 
 const About = () => {
+  const { language } = useLanguage();
+  const t = translations[language];
+
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        <p className={styles.sectionSubText}>{t.about.subText}</p>
+        <h2 className={styles.sectionHeadText}>{t.about.headText}</h2>
       </motion.div>
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
+        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] text-justify"
       >
-        I&apos;m a full-stack software engineer based in Paderborn, Germany,
-        focused on building production-ready web applications and scalable
-        services. At Semicolon Solution, I delivered 20+ secured REST APIs,
-        introduced contract-based pull request testing, and used TDD to improve
-        code coverage and post-deployment stability. I work across the MERN
-        stack with tooling like Docker, Kubernetes, GitHub Actions, and Stripe,
-        and I enjoy designing clean APIs, resilient backends, and smooth,
-        responsive UIs. I&apos;m currently pursuing an M.Sc. in Computer
-        Science at Paderborn University and exploring GenAI workflows with
-        Hugging Face, LangChain/LangGraph, and RAG to build data-driven, AI‑
-        powered experiences.
+        {t.about.description}
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">
         {services.map((service, index) => (
-          <ServiceCard key={service.title} index={index} {...service} />
+          <ServiceCard
+            key={service.title}
+            index={index}
+            title={t.services[index]}
+            icon={service.icon}
+          />
         ))}
       </div>
     </>
